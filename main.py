@@ -14,6 +14,8 @@ root.title('Interactive Digital Photomontage')
 
 SOURCE_IMG_DIR = 'source_imgs'
 OUTPUT_IMG_DIR = 'output_imgs'
+if not os.path.exists(OUTPUT_IMG_DIR):
+    os.mkdir(OUTPUT_IMG_DIR)
 def filter_img_path(paths):
     return [x for x in paths if x.split('.')[-1] in ['jpg', 'jpeg']]
 SOURCE_IMG_PATHS = filter_img_path(os.listdir(SOURCE_IMG_DIR))
