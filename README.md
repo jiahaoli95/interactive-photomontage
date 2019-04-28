@@ -1,7 +1,8 @@
 # Interactive Digital Photomontage
 
 This is a very simple python Implementation of [Interactive Digital Photomontage](https://grail.cs.washington.edu/projects/photomontage/photomontage.pdf).
-This implementation only supports "Designated image" data penalty and "colors" interaction penalty, as dicussed in Section 3 of the paper.
+
+This implementation is far from faithful to the original paper. It only supports "Designated image" data penalty and "colors" interaction penalty, as dicussed in Section 3 of the paper. Also, for simplicity, alpha-beta swap is used in place of alpha expansion in the graph-cut stage. The way user interacts with the program is also different.
 
 The code for poisson blending is largely borrowed from [this](https://github.com/PPPW/poisson-image-editing) repo.
 
